@@ -1,0 +1,47 @@
+* { margin: 0; padding: 0; box-sizing: border-box; font-family: Arial, sans-serif; }
+body {
+    background: linear-gradient(135deg, #667eea, #764ba2);
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.container {
+    background: white;
+    padding: 40px;
+    border-radius: 15px;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.3);
+    max-width: 600px;
+    width: 90%;
+    text-align: center;
+}
+h1 { color: #333; margin-bottom: 15px; }
+p { color: #666; margin-bottom: 20px; }
+form { display: flex; flex-direction: column; gap: 15px; }
+input {
+    padding: 15px;
+    border: 2px solid #ddd;
+    border-radius: 8px;
+    font-size: 16px;
+}
+input:focus { outline: none; border-color: #667eea; }
+button {
+    padding: 15px;
+    background: #667eea;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+button:hover { background: #5568d3; transform: translateY(-2px); }
+.samples { margin-top: 25px; text-align: left; padding: 15px; background: #f7f7f7; border-radius: 8px; }
+.samples p { margin: 5px 0; font-size: 14px; }
+.result-box { padding: 25px; border-radius: 10px; margin: 20px 0; }
+.result-box.success { background: #d4edda; color: #155724; border: 2px solid #28a745; }
+.result-box.danger { background: #f8d7da; color: #721c24; border: 2px solid #dc3545; }
+.result-box h2 { margin-bottom: 15px; }
+.result-box p { margin: 8px 0; }
+a { text-decoration: none; }
+a button { margin-top: 10px; }

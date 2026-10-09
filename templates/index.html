@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Phishing URL Detector</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+    <div class="container">
+        <h1>🔒 Phishing URL Detection System</h1>
+        <p>Enter a URL to check if it's safe or a phishing attempt</p>
+        <form action="/predict" method="POST">
+            <input type="text" name="url" placeholder="https://example.com" required>
+            <button type="submit">Check URL</button>
+        </form>
+        <div class="samples">
+            <p><b>Try these:</b></p>
+            <p>✅ https://www.google.com</p>
+            <p>⚠️ http://paypal-secure-login.xyz/verify</p>
+        </div>
+    </div>
+</body>
+</html>

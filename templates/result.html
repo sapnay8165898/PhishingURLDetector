@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Result</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+    <div class="container">
+        <h1>Detection Result</h1>
+        <div class="result-box {{ color }}">
+            <h2>{{ result }}</h2>
+            <p><b>URL:</b> {{ url }}</p>
+            <p><b>Confidence:</b> {{ confidence }}%</p>
+        </div>
+        <a href="/"><button>Check Another URL</button></a>
+    </div>
+</body>
+</html>
