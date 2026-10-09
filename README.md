@@ -1,20 +1,11 @@
-# Phishing URL Detection System
+## 🔗 Live Demo
+https://phishingurldetector-zpjz.onrender.com
 
-## Tech Stack
-- Python, Flask
-- Scikit-learn (Random Forest)
-- HTML/CSS
+## 📦 GitHub Repo
+https://github.com/sapnay8165898/PhishingURLDetector
 
-## Features
-- Extracts 10 URL-based features
-- Detects phishing with ML model
-- Real-time web interface
-
-## How to Run
+## 🚀 How to Run Locally
 1. pip install -r requirements.txt
 2. python train_model.py
 3. python app.py
 4. Visit http://127.0.0.1:5000
-
-## Accuracy
-~95% on training data
